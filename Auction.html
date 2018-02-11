@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Distributed Auction Based on Etherium</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>-->
+    <script src="https://cdn.rawgit.com/ethereum/web3.js/develop/dist/web3.js"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
+    <script src="./javascriptEngine.js"></script>
+</head>
+<body class="container-fluid">
+
+    <h1 >Auction!</h1>
+    <br>
+    <div class="row">
+        <div class="col-lg-4">
+            <label>Enter your user number:</label>
+            <br>
+            <input id="userNum">
+            <button class="btn btn-primary" onclick="getNumber()">Register</button>
+            <br>
+        </div>
+        <div class="col-lg-6">
+            <label style="display: none " id="balanceLbl">Your Balance is  ETH</label>
+        </div>
+    </div>
+    <br>
+    <br>
+    <div class="row">
+        <div class="col-lg-4">
+            <button class="btn btn-primary" onclick="getTopBid()">Click to see the top bid</button>
+        </div>
+        <div class="col-lg-4">
+            <label style="display: none" id="topBidLbl">Top Bid is : </label>
+        </div>
+    </div>
+    <br>
+    <br>
+    <div class="row">
+        <div class="col-lg-4">
+            <label>Enter the amount you want to bid : </label>
+            <br>
+            <input id="bidAmnt">
+            <button class="btn btn-primary" onclick="bid()">Bid</button>
+        </div>
+        <div class="col-lg-4">
+            <label style="display: none">you are fucked </label>
+        </div>
+    </div>
+    <br>
+    <br>
+<div class="row">
+    <button class="btn btn-primary" onclick="closeCont()" >
+        Click to Close the Contract if you are the creator
+    </button>
+</div>
+
+</body>
+</html>
